@@ -1,16 +1,20 @@
+import React from "react"
+import Header from "./components/Header"
+import Cards from "./components/Cards"
+
 function App() {
   return (
-    <div className="App">
-     <h1>Prueba de React</h1>
-     <ul>
-       <li>Item</li>
-       <li>Item</li>
-       <li>Item</li>
-       <li>Item</li>
-     </ul>
-
-     <p>Acá se genera el contenido de la página</p>
+    <React.Fragment>
+      
+    <div id="content">
+      <Header />
     </div>
+
+    <div id="card">
+      <Cards />
+    </div>
+
+    </React.Fragment>
   );
 }
 
